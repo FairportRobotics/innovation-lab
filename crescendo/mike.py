@@ -2,6 +2,7 @@ import requests
 import os
 from dotenv import load_dotenv, find_dotenv
 import json
+import csv
 
 load_dotenv(find_dotenv())
 
@@ -22,4 +23,21 @@ def tba_event_teams(event_key: str):
     with open(f"event_teams_{event_key}.json", "wb") as f:
         f.write(response.content)
 
-tba_event_teams("2023nyro")
+def wrangle_match_json(j):
+    match_data = {}
+
+    for k,v in j.items():
+        if isinstance(v, dict):
+            for k2, v2 in v.items():
+                match_data[k+"_"+k2] = v2
+        else:
+            match_data[k] = v
+        
+    print(match_data)
+    return None
+
+f = open('boss.json')
+data = json.load(f)
+f.close()
+
+wrangle_match_json(data)
