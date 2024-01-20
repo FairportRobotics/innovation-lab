@@ -1,0 +1,38 @@
+{
+    "scouter": "John Doe",
+    "event_key": "2023nyro",
+    "match_key": "2023nyro_f1m1",
+    "team_key": "frc3003",
+    "auto": {
+        "begin_match_with_note": 1,
+        "left_start_area": 1,
+        "speaker_score": 10,
+        "speaker_miss": 0,
+        "amp_score": 2,
+        "amp_miss": 3
+    },
+    "teleop": {
+        "speaker_score": 5,
+        "speaker_amplified": 3,
+        "speaker_miss": 5,
+        "amp_score": 4,
+        "amp_miss": 1,
+        "triggered_cooperition": 0,
+        "pass": 0,
+        "became_disabled":0
+    },
+    "endgame": {
+        "trap_score": 0,
+        "microphone_score": 0,
+        "harmony": 2,
+        "did_hang": 1
+    },
+    "postgame": {
+        "alliance_ranking_points": 0,
+        "alliance_total_score": 10,
+        "alliance_results": "win",
+        "yellow_card": 0,
+        "black_card": 0,
+        "dq": 0
+    }
+}
