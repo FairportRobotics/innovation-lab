@@ -12,4 +12,14 @@ def tba_events(year: int):
     with open(f"events_{year}.json", "wb") as f:
         f.write(response.content)
 
-tba_events(2024)
+def tba_matches(event_key: str):
+    response = requests.get(f"https://www.thebluealliance.com/api/v3/event/{event_key}/matches", headers)
+    with open(f"matches_{event_key}.json", "wb") as f:
+        f.write(response.content)
+
+def tba_event_teams(event_key: str):
+    response = requests.get(f"https://www.thebluealliance.com/api/v3/event/{event_key}/teams", headers)
+    with open(f"event_teams_{event_key}.json", "wb") as f:
+        f.write(response.content)
+
+tba_event_teams("2023nyro")
