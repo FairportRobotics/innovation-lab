@@ -33,7 +33,12 @@ def wrangle_match_json(j):
         else:
             match_data[k] = v
         
-    print(match_data)
+    #print(match_data)
+
+    with open('boss.csv','w', newline='') as f:
+        w = csv.writer(f)
+        w.writerow(match_data.keys())
+        w.writerow(match_data.values())
     return None
 
 f = open('boss.json')
