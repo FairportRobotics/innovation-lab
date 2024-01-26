@@ -1,38 +1,44 @@
 {
-    "scouter": "John Doe",
-    "event_key": "2023nyro",
-    "match_key": "2023nyro_f1m1",
-    "team_key": "frc3003",
+    "key": "2023nyrr:2023nyrr_qm1:Blue:1",
+    "eventKey": "2023nyrr",
+    "matchKey": "2023nyrr_qm1",
+    "matchNumber": 1,
+    "scoutName": "John Doe",
+    "alliance": {
+      "name": "Blue|Red",
+      "number": 1,
+      "scheduledTeamKey": "frc2228",
+      "scoutedTeamKey": "frc5740"
+    },
     "auto": {
-        "begin_match_with_note": 1,
-        "left_start_area": 1,
-        "speaker_score": 10,
-        "speaker_miss": 0,
-        "amp_score": 2,
-        "amp_miss": 3
+      "beganWithNote": true,
+      "leftStartArea": true,
+      "speakerScore": 1,
+      "speakerMiss": 2,
+      "ampScore": 3,
+      "ampMiss": 4
     },
     "teleop": {
-        "speaker_score": 5,
-        "speaker_amplified": 3,
-        "speaker_miss": 5,
-        "amp_score": 4,
-        "amp_miss": 1,
-        "triggered_cooperition": 0,
-        "pass": 0,
-        "became_disabled":0
+      "speakerScore": 5,
+      "speakerScoreAmplified": 6,
+      "speakerMiss": 7,
+      "ampScore": 8,
+      "ampMiss": 9,
+      "ampCooperition": true,
+      "passes": 10
     },
     "endgame": {
-        "trap_score": 0,
-        "microphone_score": 0,
-        "harmony": 2,
-        "did_hang": 1
+      "trapScore": 11,
+      "microphoneScore": 12,
+      "harmonyScore": 0,
+      "didHang": true
     },
-    "postgame": {
-        "alliance_ranking_points": 0,
-        "alliance_total_score": 10,
-        "alliance_results": "win",
-        "yellow_card": 0,
-        "black_card": 0,
-        "dq": 0
+    "final": {
+      "rankingPoints": 13,
+      "totalScore": 14,
+      "result": "win|lost|tie",
+      "violation": "yellow-card|red-card|disabled|disqualified",
+      "penalties": 15,
+      "notes": "The Alliance started dancing."
     }
-}
+  }
