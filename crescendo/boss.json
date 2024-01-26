@@ -36,7 +36,7 @@
     "final": {
       "rankingPoints": 13,
       "totalScore": 14,
-      "result": "win|lost|tie",
+      "result": "win|lose|tie",
       "violation": "yellow-card|red-card|disabled|disqualified",
       "penalties": 15,
       "notes": "The Alliance started dancing."
