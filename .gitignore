@@ -1,1 +1,4 @@
-crescendo/.env
+.venv
+/images/raw/*
+/images/processed/*
+*.code-workspace
