@@ -12,7 +12,7 @@ my_downloader = simp.Downloader()
 my_downloader.directory = "./images/raw/"
 # Create the directory if it doesn't exist
 if not os.path.isdir(my_downloader.directory):
-        os.makedirs(my_downloader.directory)
+    os.makedirs(my_downloader.directory)
 
 # Loop over the keywords
 for keyword in keywords:
