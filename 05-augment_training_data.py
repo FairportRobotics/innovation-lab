@@ -11,15 +11,15 @@ base_dir = "./data/train/images/" # os.getcwd() + "/data/train/images/"
 labels_dir = base_dir.replace("images", "labels")
 
 conversions = {
-    "hsv": cv2.COLOR_RGB2HSV_FULL,
+    #"hsv": cv2.COLOR_RGB2HSV_FULL,
     "grayscale": cv2.COLOR_RGB2GRAY,
-    "hls": cv2.COLOR_RGB2HLS_FULL,
-    "lab": cv2.COLOR_RGB2LAB,
-    "luv": cv2.COLOR_RGB2LUV,
-    "bgr": cv2.COLOR_RGB2BGR,
-    "xyz": cv2.COLOR_RGB2XYZ,
-    "ycrcb": cv2.COLOR_RGB2YCrCb,
-    "yuv": cv2.COLOR_RGB2YUV
+    #"hls": cv2.COLOR_RGB2HLS_FULL,
+    #"lab": cv2.COLOR_RGB2LAB,
+    #"luv": cv2.COLOR_RGB2LUV,
+    #"bgr": cv2.COLOR_RGB2BGR,
+    #"xyz": cv2.COLOR_RGB2XYZ,
+    #"ycrcb": cv2.COLOR_RGB2YCrCb,
+    #"yuv": cv2.COLOR_RGB2YUV
 }
 
 def add_noise(image, prob=0.5):

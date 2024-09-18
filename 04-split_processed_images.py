@@ -2,7 +2,10 @@ import os
 import shutil
 from tqdm import tqdm
 
-n_training = 100
+n_images = 764
+training_share = 0.75
+
+n_training = round(n_images * training_share, 0)
 base_dir = "./images/processed/"
 target_base_dir = "./data/"
 
@@ -16,7 +19,7 @@ if os.path.isdir(target_base_dir):
 
 #'''
 for file_name in os.listdir(base_dir):
-    if ".txt" in file_name:
+    if ".txt" in file_name and "classes" not in file_name:
         if len(training_set) < n_training:
             training_set.add(file_name)
         else:

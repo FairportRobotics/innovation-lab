@@ -4,7 +4,8 @@ import os
 base_dir = os.getcwd()
 yaml_file_name = "custom.yaml"
 epochs = 300
-epochs = 10
+epochs = 1
+
 train = f"{base_dir}/data/train".replace("/", "\\")
 val = f"{base_dir}/data/val".replace("/", "\\")
 class_names = []
@@ -26,7 +27,8 @@ with open(f"{base_dir}/{yaml_file_name}", "w") as file:
 
 
 # Train the model
-model = YOLO("yolov8s.pt")
+model = YOLO("yolov10s.pt")
+model = YOLO(f"{base_dir}/runs/detect/train2/weights/best.pt")
 model.train(data=yaml_file_name, epochs=epochs)
 metrics = model.val()
 print(metrics)
